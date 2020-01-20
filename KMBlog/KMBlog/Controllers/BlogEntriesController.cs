@@ -38,7 +38,7 @@ namespace KMBlog.Controllers
         }
 
         // GET: BlogEntries/Create
-        //[Authorize(Roles ="Admin")]
+        [Authorize(Roles = "Admin")]
         public ActionResult Create()
         {
 
