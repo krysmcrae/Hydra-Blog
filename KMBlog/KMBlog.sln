@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29613.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KMBlog", "KMBlog\KMBlog.csproj", "{CBBBA5F4-802B-4E0C-B639-724E28226664}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CBBBA5F4-802B-4E0C-B639-724E28226664}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CBBBA5F4-802B-4E0C-B639-724E28226664}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CBBBA5F4-802B-4E0C-B639-724E28226664}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CBBBA5F4-802B-4E0C-B639-724E28226664}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {241C1E6D-C19C-4EF9-8122-7347BA7A4F54}
+	EndGlobalSection
+EndGlobal
