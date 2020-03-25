@@ -1,4 +1,6 @@
-﻿using System;
+﻿using KMBlog.Helpers;
+using KMBlog.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -8,9 +10,15 @@ namespace KMBlog.Controllers
 {
     public class HomeController : Controller
     {
+        HomeHelper homie = new HomeHelper();
+        ApplicationDbContext db = new ApplicationDbContext();
         public ActionResult Index()
         {
-            return View( );
+            ViewBag.Author = db.Users.Where(u => u.Id == db.Posts.FirstOrDefault().AuthorId).FirstOrDefault().DisplayName;
+
+            var publishedEntries = db.Posts.Where(p => p.Published==true).ToList();
+            ViewBag.size= homie.BuildAHouse();
+            return View(publishedEntries);
         }
 
         public ActionResult About()

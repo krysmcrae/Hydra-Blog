@@ -50,16 +50,17 @@ namespace KMBlog.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorize]
         public ActionResult Create([Bind(Include = "BlogEntryId,Body")] EntryComment entryComment)
         {
             if (ModelState.IsValid)
             {
-                var userId = User.Identity.GetUserId();
-                entryComment.AuthorId = userId;
+                entryComment.AuthorId = User.Identity.GetUserId();
                 entryComment.CreationDate = DateTime.Now;
                 db.EntryComments.Add(entryComment);
                 db.SaveChanges();
-                return RedirectToAction("Index");
+                var slug = db.Posts.Find(entryComment.BlogEntryId).Slug;
+                return RedirectToAction("Details","BlogEntries",new { Slug = slug });
             }
 
             ViewBag.AuthorId = new SelectList(db.Users, "Id", "FirstName", entryComment.AuthorId);
@@ -68,6 +69,8 @@ namespace KMBlog.Controllers
         }
 
         // GET: EntryComments/Edit/5
+        [Authorize(Roles = "Admin,Moderator")]
+
         public ActionResult Edit(int? id)
         {
             if (id == null)
@@ -89,6 +92,7 @@ namespace KMBlog.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles="Admin,Moderator")]
         public ActionResult Edit([Bind(Include = "Id,BlogEntryId,AuthorId,Body,CreationDate,UpdatedDate,UpdateReason")] EntryComment entryComment)
         {
             if (ModelState.IsValid)
@@ -103,6 +107,8 @@ namespace KMBlog.Controllers
         }
 
         // GET: EntryComments/Delete/5
+        [Authorize(Roles = "Admin,Moderator")]
+
         public ActionResult Delete(int? id)
         {
             if (id == null)
@@ -120,6 +126,8 @@ namespace KMBlog.Controllers
         // POST: EntryComments/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles = "Admin,Moderator")]
+
         public ActionResult DeleteConfirmed(int id)
         {
             EntryComment entryComment = db.EntryComments.Find(id);

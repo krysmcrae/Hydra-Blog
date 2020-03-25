@@ -1,5 +1,5 @@
 ﻿using System.Text;
-public class StringUtilities
+public static class StringUtilities
 {
     public static string URLFriendly(string title)
     {

@@ -175,6 +175,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Helpers\HomeHelper.cs" />
     <Compile Include="Helpers\StringUtilities.cs" />
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -182,6 +183,7 @@
     <Compile Include="Models\EntryComment.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
+    <Compile Include="Enum\PostType.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
@@ -214,6 +216,7 @@
     <Content Include="Images\blog-7.jpg" />
     <Content Include="Images\blog-8.jpg" />
     <Content Include="Images\blog-9.jpg" />
+    <Content Include="Images\cssAbstractImage.png" />
     <Content Include="Images\gallery-1.jpg" />
     <Content Include="Images\gallery-2.jpg" />
     <Content Include="Images\gallery-3.jpg" />
@@ -222,10 +225,13 @@
     <Content Include="Images\gallery-6.jpg" />
     <Content Include="Images\gallery-7.jpg" />
     <Content Include="Images\gallery-8.jpg" />
+    <Content Include="Images\htmlAbstractImage.jpg" />
     <Content Include="Images\img_bg_1.jpg" />
     <Content Include="Images\img_bg_2.jpg" />
     <Content Include="Images\img_bg_3.jpg" />
     <Content Include="Images\img_bg_4.jpg" />
+    <Content Include="Images\javascriptAbstractImage.png" />
+    <Content Include="Images\K-logo.ico" />
     <Content Include="Images\loader.gif" />
     <Content Include="Images\loc.png" />
     <Content Include="Images\person1.jpg" />

@@ -13,6 +13,7 @@ namespace KMBlog.Models
         public string FirstName { get; set; }
         public string LastName { get; set; }
         public string DisplayName { get; set; }
+        public string AvatarPath { get; set; }
         public virtual ICollection<EntryComment> Comments { get; set; }
 
         public ApplicationUser()

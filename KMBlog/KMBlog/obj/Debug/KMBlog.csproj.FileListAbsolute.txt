@@ -208,7 +208,7 @@ C:\Users\Krys McRae\Documents\GitHub\Hydra-Blog\KMBlog\KMBlog\bin\Microsoft.Owin
 C:\Users\Krys McRae\Documents\GitHub\Hydra-Blog\KMBlog\KMBlog\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
 C:\Users\Krys McRae\Documents\GitHub\Hydra-Blog\KMBlog\KMBlog\bin\Microsoft.Owin.Security.OAuth.xml
 C:\Users\Krys McRae\Documents\GitHub\Hydra-Blog\KMBlog\KMBlog\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-C:\Users\Krys McRae\Documents\GitHub\Hydra-Blog\KMBlog\KMBlog\obj\Debug\KMBlog.csprojAssemblyReference.cache
 C:\Users\Krys McRae\Documents\GitHub\Hydra-Blog\KMBlog\KMBlog\obj\Debug\KMBlog.csproj.CopyComplete
 C:\Users\Krys McRae\Documents\GitHub\Hydra-Blog\KMBlog\KMBlog\obj\Debug\KMBlog.dll
 C:\Users\Krys McRae\Documents\GitHub\Hydra-Blog\KMBlog\KMBlog\obj\Debug\KMBlog.pdb
+C:\Users\Krys McRae\Documents\GitHub\Hydra-Blog\KMBlog\KMBlog\obj\Debug\KMBlog.csprojAssemblyReference.cache

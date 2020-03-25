@@ -41,23 +41,25 @@
         <dd>
             @Html.DisplayFor(model => model.CreationDate)
         </dd>
+        @if (Model.UpdatedDate != null)
+        {
 
-        <dt>
-            @Html.DisplayNameFor(model => model.UpdatedDate)
-        </dt>
+            <dt>
+                @Html.DisplayNameFor(model => model.UpdatedDate)
+            </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.UpdatedDate)
-        </dd>
+            <dd>
+                @Html.DisplayFor(model => model.UpdatedDate)
+            </dd>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.UpdateReason)
-        </dt>
+            <dt>
+                @Html.DisplayNameFor(model => model.UpdateReason)
+            </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.UpdateReason)
-        </dd>
-
+            <dd>
+                @Html.DisplayFor(model => model.UpdateReason)
+            </dd>
+        }
     </dl>
 </div>
 <p>
